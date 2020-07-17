@@ -1,0 +1,78 @@
+@import "./assets/style/custom-variables.scss";
+@import "~taro-ui/dist/style/index.scss";
+
+page, body, html {
+    --primary-color: #ff6677;
+    --title-color: #331921;
+    --warning-color: #ffb52e;
+    --info-color: #32a5f6;
+
+    --subtitle-color: #9f8f94;
+    --tip-color: #d9cbcf;
+    --line-color: #ece5e7;
+    --background-color: #f6f6f6;
+
+    --font-size-title: 36px;
+    --font-size-subtitle: 32px;
+    --font-size-large: 30px;
+    --font-size-normal: 28px;
+    --font-size-info: 24px;
+    --font-size-small: 22px;
+    --font-size-mini: 20px;
+}
+
+// 按钮
+.btn-primary.at-button {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    width: 80%;
+    font-size: 28px;
+}
+.btn-link {
+    color: var(--info-color);
+    font-size: var(--font-size-info);
+}
+
+// 加载更多
+.at-load-more__tip {
+    font-size: 28px;
+    border: none;
+}
+.at-load-more__cnt .at-button {
+    font-size: 28px;
+    border: none;
+}
+
+// tab页
+.tab-sticky {
+    overflow-y: scroll;
+}
+.tab-sticky .at-tabs__header {
+    z-index: 99;
+    position: sticky;
+    top: 0;
+}
+
+// form中的元素
+.form-item.at-list__item {
+    padding-left: 32px;
+}
+.form-item.at-textarea {
+    border: 0;
+    padding: 32px;
+}
+
+.bottom-fixed {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+}
+
+.at-list__item-content {
+    min-width: 200px;
+}
+.at-list__item-extra{
+    max-width: 450px;
+    flex: 1;
+}
